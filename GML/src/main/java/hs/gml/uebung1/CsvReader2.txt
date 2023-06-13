@@ -1,0 +1,25 @@
+package hs.gml.uebung1;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class CsvReader2 {
+    public ArrayList<String[]> readCsv(String path, String cvsSplitBy) {
+        FileReader fileReader = new FileReader(path);
+        //CSVParser csvParser = new CSVParser(fileReader, CSVFormat.DEFAULT.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim());
+
+
+        String line = "";
+
+        while ((line = bufferedReader.readLine()) != null) {
+            String[] row = line.split(cvsSplitBy);
+            tabelle.add(row);
+        }
+
+
+        return tabelle;
+    }
+}
